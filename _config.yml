@@ -18,6 +18,10 @@ markdown:       kramdown
 include:
   - _pages
 
+collections:
+  thoughts:
+    output: true
+    permalink: /thoughts/:name/
 # Assets
 sass:
   sass_dir:     _sass
