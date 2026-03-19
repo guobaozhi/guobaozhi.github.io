@@ -64,3 +64,34 @@ img {
 td {
   vertical-align: top;
 }
+
+/* 列表整体 */
+.thoughts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 每一行 */
+.thought-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* 标题 */
+.thought-title {
+  text-decoration: none;
+  color: #333;
+  flex: 1;
+}
+
+/* 时间 */
+.thought-date {
+  color: #999;
+  font-size: 14px;
+  white-space: nowrap;
+  margin-left: 20px;
+}

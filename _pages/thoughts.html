@@ -1,0 +1,20 @@
+---
+layout: default
+title: Thoughts
+permalink: /thoughts/
+---
+
+<ul class="thoughts-list">
+  {% assign sorted = site.thoughts | sort: "date" | reverse %}
+  {% for thoughts in sorted %}
+    <li class="thought-item">
+      <a class="thought-title" href="{{ thoughts.url | prepend: site.baseurl }}">
+        {{ thoughts.title }}
+      </a>
+      <span class="thought-date">
+        {{ thoughts.date | date: "%Y-%m-%d" }}
+      </span>
+    </li>
+  {% endfor %}
+</ul>
+
