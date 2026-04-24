@@ -32,7 +32,16 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-toc
   # - jemoji #Uncomment this to allow emoji in your post
+
+# TOC Settings
+toc:
+  min_level: 1
+  max_level: 3
+  list_class: toc
+  list_class: toc__list
+  sublist_class: toc__sublist
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
